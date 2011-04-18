@@ -3,3 +3,11 @@
 #
 # brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
 #
+
+
+#
+## Custom by Lorn
+#
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
+source $HOME/perl5/perlbrew/etc/bashrc

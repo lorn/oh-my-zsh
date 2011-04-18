@@ -11,18 +11,11 @@ for config_file ($ZSH/lib/*.zsh) source $config_file
 for config_file ($ZSH/custom/*.zsh) source $config_file
 
 # Load all of the plugins that were defined in ~/.zshrc
-plugin=${plugin:=(git perl cpanm ruby brew)}
-for plugin ($plugins) source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+plugin=${plugin:=()}
+for plugin ($plugins) source $ZSH/plugins/$plugin/$plugin.plugin.zsh; echo $plugin
 
 # Load the theme
 source "$ZSH/themes/$ZSH_THEME.zsh-theme"
-
-#
-# Custom by Lorn
-#
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
-source $HOME/perl5/perlbrew/etc/bashrc
 
 # Check for updates on initial load...
 if [ "$DISABLE_AUTO_UPDATE" = "true" ]
