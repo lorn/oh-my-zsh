@@ -10,4 +10,11 @@
 #
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
-source $HOME/perl5/perlbrew/etc/bashrc
+
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
+
+alias ssh='ssh -AC'
+
+irc() {
+  ssh -A lornlab@lornlab.org
+}
