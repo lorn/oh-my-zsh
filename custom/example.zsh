@@ -8,6 +8,9 @@
 #
 ## Custom by Lorn
 #
+#
+
+export PATH=$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
 
