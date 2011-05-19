@@ -16,9 +16,6 @@ autoload -U compinit
 compinit -i
 
 # Load all of the plugins that were defined in ~/.zshrc
-plugin=${plugin:=()}
-for plugin ($plugins) source $ZSH/plugins/$plugin/$plugin.plugin.zsh; echo $plugin
-=======
 for plugin ($plugins); do
   if [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
     source $ZSH/plugins/$plugin/$plugin.plugin.zsh
