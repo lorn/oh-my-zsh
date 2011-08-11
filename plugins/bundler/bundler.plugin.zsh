@@ -2,6 +2,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias bl="bundle list"
 alias bu="bundle update"
+alias bp="bundle package"
 
 # The following is based on https://github.com/gma/bundler-exec
 
@@ -23,12 +24,10 @@ _within-bundled-project() {
 }
 
 _run-with-bundler() {
-  local command="$1"
-  shift
   if _bundler-installed && _within-bundled-project; then
-    bundle exec $command "$@"
+    bundle exec $@
   else
-    $command "$@"
+    $@
   fi
 }
 
