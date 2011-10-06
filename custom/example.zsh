@@ -11,7 +11,8 @@
 #
 
 export PATH=$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin
-
+export TERM=xterm-256color
+export LANG=en_US.UTF-8
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
 
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
