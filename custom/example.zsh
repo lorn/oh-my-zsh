@@ -10,7 +10,7 @@
 #
 #
 
-export PATH=$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin
 export TERM=xterm-256color
 export LANG=en_US.UTF-8
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
@@ -49,3 +49,5 @@ ssh-reagent () {
         done
         echo Cannot find ssh agent - maybe you should reconnect and forward it?
 }
+
+alias emacs="/usr/local/Cellar/emacs/24.1/Emacs.app/Contents/MacOS/Emacs -nw"
