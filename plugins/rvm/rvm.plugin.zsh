@@ -1,17 +1,11 @@
-if [ -f ~/.rvm/scripts/rvm ]
-then
-source ~/.rvm/scripts/rvm
-else
-echo "[rvm plugin] No default ruby found found, please type: "
-  echo "[rvm plugin] $ rvm --default use x.x.x"
-  echo "[rvm plugin] where x.x.x is the version of ruby you want to use to define one."
-fi
+fpath=($rvm_path/scripts/zsh/Completion $fpath)
+
 
 alias rubies='rvm list rubies'
 alias gemsets='rvm gemset list'
 
 local ruby18='ruby-1.8.7-p334'
-local ruby19='ruby-1.9.2-p180'
+local ruby19='ruby-1.9.3-p194'
 
 function rb18 {
 	if [ -z "$1" ]; then
@@ -51,3 +45,8 @@ function gems {
 		-Ee "s/$current_ruby@global/$fg[yellow]&$reset_color/g" \
 		-Ee "s/$current_ruby$current_gemset$/$fg[green]&$reset_color/g"
 }
+
+function _rvm_completion {
+  source $rvm_path"/scripts/zsh/Completion/_rvm"
+}
+compdef _rvm_completion rvm
