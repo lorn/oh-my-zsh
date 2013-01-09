@@ -50,4 +50,4 @@ ssh-reagent () {
         echo Cannot find ssh agent - maybe you should reconnect and forward it?
 }
 
-alias emacs="/usr/local/Cellar/emacs/24.1/Emacs.app/Contents/MacOS/Emacs -nw"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
