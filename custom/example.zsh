@@ -9,8 +9,11 @@
 ## Custom by Lorn
 #
 #
-
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias ec="emacsclient --no-wait -a /Applications/Emacs.app/Contents/MacOS/Emacs"
+export EDITOR='ec'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
+export EDITOR='ec'
 export TERM=xterm-256color
 export LANG=en_US.UTF-8
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
@@ -67,5 +70,3 @@ ssh-reagent () {
         done
         echo Cannot find ssh agent - maybe you should reconnect and forward it?
 }
-
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
