@@ -20,7 +20,6 @@ export LANG=en_US.UTF-8
 
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
 
-eval "$(fasd --init auto)"
 
 alias ssh='ssh -AC'
 
