@@ -10,7 +10,7 @@ export ZSH_THEME="dsouza"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -32,7 +32,7 @@ export ZSH_THEME="dsouza"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git perl cpanm brew)
+plugins=(git perl cpanm brew fasd)
 
 source $ZSH/oh-my-zsh.sh
 
