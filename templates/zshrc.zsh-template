@@ -11,6 +11,8 @@ export ZSH_THEME="dsouza"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
