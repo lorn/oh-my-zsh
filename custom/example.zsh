@@ -10,7 +10,7 @@
 #
 #
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-alias ec="emacsclient --no-wait -a /Applications/Emacs.app/Contents/MacOS/Emacs"
+alias ec="emacsclient"
 export EDITOR='ec'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
 export EDITOR='ec'
@@ -20,7 +20,7 @@ export LANG=en_US.UTF-8
 
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh 
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 alias ssh='ssh -AC'
 
