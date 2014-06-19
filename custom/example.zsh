@@ -9,7 +9,6 @@
 ## Custom by Lorn
 #
 #
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias ec="emacsclient"
 export EDITOR='ec'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
