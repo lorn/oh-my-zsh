@@ -20,6 +20,7 @@ export LANG=en_US.UTF-8
 
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
 
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh 
 
 alias ssh='ssh -AC'
 
