@@ -9,17 +9,9 @@
 ## Custom by Lorn
 #
 #
-alias ec="emacsclient"
-export EDITOR='ec'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
-export EDITOR='ec'
 export TERM=xterm-256color
 export LANG=en_US.UTF-8
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" ]]
-
-[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" ]]
-
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 alias ssh='ssh -AC'
 
@@ -55,10 +47,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
-
-irc() {
-  ssh -A lorn@lornlab.org
-}
 
 ssh-reagent () {
          for agent in /tmp/ssh-*/agent.*; do
