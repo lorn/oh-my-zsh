@@ -1,8 +1,14 @@
-# Add yourself some shortcuts to projects you often work on
-# Example:
+# You can put files here to add functionality separated per file, which
+# will be ignored by git.
+# Files on the custom/ directory will be automatically loaded by the init
+# script, in alphabetical order.
+
+# For example: add yourself some shortcuts to projects you often work on.
 #
-# brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
+# brainstormr=~/Projects/development/planetargon/brainstormr
+# cd $brainstormr
 #
+
 
 
 #
@@ -59,3 +65,4 @@ ssh-reagent () {
         done
         echo Cannot find ssh agent - maybe you should reconnect and forward it?
 }
+
