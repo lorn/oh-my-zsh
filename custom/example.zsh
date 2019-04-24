@@ -15,10 +15,12 @@
 ## Custom by Lorn
 #
 #
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/:/home/lorn/.cargo/bin:/home/lorn/.local/bin
 export TERM=xterm-256color
+export TERMINAL="st" 
+export FILE="ranger" 
 export LANG=en_US.UTF-8
-
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 alias ssh='ssh -AC'
 
 alias ga='git add'
