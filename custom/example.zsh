@@ -15,11 +15,13 @@
 ## Custom by Lorn
 #
 #
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/App/bin:$HOME/App/redis/bin:$HOME/App/mongo/bin:$HOME/.dot/bin/:/home/lorn/.cargo/bin:/home/lorn/.local/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/home/lorn/.asdf/shims:/home/lorn/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lorn/.scripts/tools:/home/lorn/.scripts/statusbar:/home/lorn/.scripts/cron:/home/lorn/.scripts/i3cmds:/home/lorn/.scripts/:/home/lorn/.cargo/bin:/home/lorn/.local/bin:$PATH
+
 export TERM=xterm-256color
-export TERMINAL="st" 
-export FILE="ranger" 
+export TERMINAL="st"
+export FILE="ranger"
 export LANG=en_US.UTF-8
+export GIT_PATH="/home/lorn/src/"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 alias ssh='ssh -AC'
 
